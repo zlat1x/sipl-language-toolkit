@@ -1,0 +1,22 @@
+(* SIPL v1.0, course BNF NP1 / NS1-NS6 / NA1-NA6 / NB1-NB5.
+   Abstract EBNF grammar with explicit associativity and precedence.
+   Original BNF left recursion is factored into repetitions. *)
+program      = "begin", statement_sequence, "end" ;
+statement_sequence = statement, { ";", statement } ;
+statement    = identifier, ":=", arithmetic
+             | "skip"
+             | "begin", statement_sequence, "end"
+             | "if", boolean, "then", statement, "else", statement
+             | "while", boolean, "do", statement ;
+boolean      = boolean_not, { ("∨" | "|"), boolean_not } ;
+boolean_not  = ("¬" | "!"), boolean_not
+             | arithmetic, ("=" | ">"), arithmetic
+             | "(", boolean, ")" ;
+arithmetic   = term, { ("+" | "-"), term } ;
+term         = factor, { "*", factor } ;
+factor       = integer | identifier | "(", arithmetic, ")" ;
+integer      = [ "-" ], digit, { digit } ;
+identifier   = (letter | "_"), { letter | digit | "_" } - keyword ;
+digit        = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+letter       = "A" | ... | "Z" | "a" | ... | "z" ;
+keyword      = "begin" | "end" | "skip" | "if" | "then" | "else" | "while" | "do" ;

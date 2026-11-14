@@ -1,0 +1,18 @@
+{
+  "language": "SIPL",
+  "version": "1.0.0",
+  "source": "Theory of Programming practicum (2024), pp. 8-10, rules NP1, NS1-NS6, NA1-NA6, NB1-NB5",
+  "file": "sipl.ebnf",
+  "start": "program",
+  "terminals": {
+    "assign": ":=", "sequence": ";", "comparison": ["=", ">"],
+    "arithmetic": ["+", "-", "*"], "disjunction": ["∨", "|"],
+    "negation": ["¬", "!"], "keywords": ["begin", "end", "skip", "if", "then", "else", "while", "do"],
+    "integer": "-?[0-9]+", "identifier": "[A-Za-z_][A-Za-z0-9_]* except keywords"
+  },
+  "precedence_high_to_low": ["*", "+ -", "= >", "¬", "∨", ":=", "while do", "if then else", ";"],
+  "associativity": {"+": "left", "-": "left", "*": "left", "∨": "left", ";": "left"},
+  "restrictions": ["Program begins with begin and ends with end", "Statements cannot be empty", "Trailing semicolons are not accepted", "Conditions require comparisons, disjunction or negation", "Undefined variables are partial (runtime error)"],
+  "lexical_aliases": {"|": "∨", "!": "¬"},
+  "extensions": ["Identifiers with multiple letters and digits", "ASCII aliases for logical operators"]
+}

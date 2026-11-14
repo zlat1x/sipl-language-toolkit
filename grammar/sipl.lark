@@ -1,0 +1,26 @@
+// Independent machine-readable SIPL syntax specification (course BNF).
+// Earley is suitable for the original BNF's ambiguities; operational parser
+// resolves precedence and associativity as documented in grammar/sipl.json.
+start: "begin" sequence "end"
+sequence: statement (";" statement)*
+?statement: IDENT ":=" arithmetic
+          | "skip"
+          | "begin" sequence "end"
+          | "if" condition "then" statement "else" statement
+          | "while" condition "do" statement
+?condition: disjunction
+?disjunction: negation (OR negation)*
+?negation: NOT negation
+         | arithmetic COMP arithmetic
+         | "(" condition ")"
+?arithmetic: term (("+" | "-") term)*
+?term: atom ("*" atom)*
+?atom: integer | IDENT | "(" arithmetic ")"
+integer: "-"? INT
+OR: "∨" | "|"
+NOT: "¬" | "!"
+COMP: "=" | ">"
+IDENT: /[A-Za-z_][A-Za-z0-9_]*/
+INT: /[0-9]+/
+%import common.WS
+%ignore WS
