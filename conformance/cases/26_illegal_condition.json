@@ -1,0 +1,7 @@
+{
+  "id": "26_illegal_condition",
+  "source": "begin if X < 0 then skip else skip end",
+  "expect": {
+    "error": "E_LEX"
+  }
+}

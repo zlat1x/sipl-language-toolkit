@@ -1,0 +1,7 @@
+{
+  "id": "21_double_semicolon",
+  "source": "begin skip;;skip end",
+  "expect": {
+    "error": "E_PARSE"
+  }
+}

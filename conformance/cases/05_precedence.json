@@ -1,0 +1,10 @@
+{
+  "id": "05_precedence",
+  "source": "begin X := 2 + 3 * 4 end",
+  "state": {},
+  "expect": {
+    "state": {
+      "X": 14
+    }
+  }
+}

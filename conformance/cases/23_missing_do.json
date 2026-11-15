@@ -1,0 +1,7 @@
+{
+  "id": "23_missing_do",
+  "source": "begin while X > 0 skip end",
+  "expect": {
+    "error": "E_PARSE"
+  }
+}

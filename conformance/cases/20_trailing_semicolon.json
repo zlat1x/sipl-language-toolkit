@@ -1,0 +1,7 @@
+{
+  "id": "20_trailing_semicolon",
+  "source": "begin skip; end",
+  "expect": {
+    "error": "E_PARSE"
+  }
+}

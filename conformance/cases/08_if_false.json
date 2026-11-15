@@ -1,0 +1,13 @@
+{
+  "id": "08_if_false",
+  "source": "begin if N > 2 then R := 1 else R := 0 end",
+  "state": {
+    "N": 2
+  },
+  "expect": {
+    "state": {
+      "N": 2,
+      "R": 0
+    }
+  }
+}

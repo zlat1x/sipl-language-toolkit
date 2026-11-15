@@ -1,0 +1,8 @@
+{
+  "id": "28_infinite_loop",
+  "source": "begin while 1 > 0 do skip end",
+  "expect": {
+    "error": "E_STEP_LIMIT"
+  },
+  "max_steps": 30
+}

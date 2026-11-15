@@ -1,0 +1,13 @@
+{
+  "id": "13_disjunction",
+  "source": "begin if X = 1 ∨ X > 3 then R := 1 else R := 0 end",
+  "state": {
+    "X": 4
+  },
+  "expect": {
+    "state": {
+      "X": 4,
+      "R": 1
+    }
+  }
+}

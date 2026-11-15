@@ -1,0 +1,7 @@
+{
+  "id": "22_missing_else",
+  "source": "begin if X > 0 then skip end",
+  "expect": {
+    "error": "E_PARSE"
+  }
+}

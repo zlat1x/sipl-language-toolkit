@@ -1,0 +1,7 @@
+{
+  "id": "24_invalid_operator",
+  "source": "begin X := 2 / 3 end",
+  "expect": {
+    "error": "E_LEX"
+  }
+}

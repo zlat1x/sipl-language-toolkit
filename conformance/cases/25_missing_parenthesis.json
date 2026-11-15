@@ -1,0 +1,7 @@
+{
+  "id": "25_missing_parenthesis",
+  "source": "begin X := (1+2 end",
+  "expect": {
+    "error": "E_PARSE"
+  }
+}

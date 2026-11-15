@@ -1,0 +1,7 @@
+{
+  "id": "18_missing_assignment",
+  "source": "begin X = 1 end",
+  "expect": {
+    "error": "E_PARSE"
+  }
+}

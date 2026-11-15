@@ -1,0 +1,10 @@
+{
+  "id": "11_nested_block",
+  "source": "begin X := 3; begin X := X + 2 end end",
+  "state": {},
+  "expect": {
+    "state": {
+      "X": 5
+    }
+  }
+}

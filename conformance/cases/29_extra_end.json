@@ -1,0 +1,7 @@
+{
+  "id": "29_extra_end",
+  "source": "begin skip end end",
+  "expect": {
+    "error": "E_PARSE"
+  }
+}

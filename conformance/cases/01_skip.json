@@ -1,0 +1,14 @@
+{
+  "id": "01_skip",
+  "source": "begin skip end",
+  "state": {},
+  "expect": {
+    "state": {},
+    "ast": {
+      "kind": "Program",
+      "body": {
+        "kind": "Skip"
+      }
+    }
+  }
+}

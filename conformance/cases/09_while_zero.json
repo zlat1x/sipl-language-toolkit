@@ -1,0 +1,12 @@
+{
+  "id": "09_while_zero",
+  "source": "begin while N > 0 do N := N - 1 end",
+  "state": {
+    "N": 0
+  },
+  "expect": {
+    "state": {
+      "N": 0
+    }
+  }
+}

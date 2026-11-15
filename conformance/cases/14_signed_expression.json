@@ -1,0 +1,10 @@
+{
+  "id": "14_signed_expression",
+  "source": "begin R := 2 - -3 end",
+  "state": {},
+  "expect": {
+    "state": {
+      "R": 5
+    }
+  }
+}

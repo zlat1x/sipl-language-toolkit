@@ -1,0 +1,11 @@
+{
+  "id": "04_sequence",
+  "source": "begin X := 1; Y := X + 2 end",
+  "state": {},
+  "expect": {
+    "state": {
+      "X": 1,
+      "Y": 3
+    }
+  }
+}

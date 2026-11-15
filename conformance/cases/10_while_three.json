@@ -1,0 +1,12 @@
+{
+  "id": "10_while_three",
+  "source": "begin while N > 0 do N := N - 1 end",
+  "state": {
+    "N": 3
+  },
+  "expect": {
+    "state": {
+      "N": 0
+    }
+  }
+}

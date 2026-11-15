@@ -1,0 +1,7 @@
+{
+  "id": "19_missing_expression",
+  "source": "begin X := ; end",
+  "expect": {
+    "error": "E_PARSE"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "03_negative",
+  "source": "begin X := -5 end",
+  "state": {},
+  "expect": {
+    "state": {
+      "X": -5
+    }
+  }
+}

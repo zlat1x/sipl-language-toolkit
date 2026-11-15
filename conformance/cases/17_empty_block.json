@@ -1,0 +1,7 @@
+{
+  "id": "17_empty_block",
+  "source": "begin end",
+  "expect": {
+    "error": "E_PARSE"
+  }
+}

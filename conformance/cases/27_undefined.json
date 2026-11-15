@@ -1,0 +1,7 @@
+{
+  "id": "27_undefined",
+  "source": "begin R := Q + 1 end",
+  "expect": {
+    "error": "E_UNDEFINED"
+  }
+}

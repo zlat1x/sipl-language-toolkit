@@ -1,0 +1,13 @@
+{
+  "id": "12_boolean_negation",
+  "source": "begin if ¬(X = 1) then R := 1 else R := 2 end",
+  "state": {
+    "X": 1
+  },
+  "expect": {
+    "state": {
+      "X": 1,
+      "R": 2
+    }
+  }
+}

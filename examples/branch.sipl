@@ -1,0 +1,4 @@
+begin
+    if X > 0 ∨ Y = 0 then R := X + 2 * Y else R := -1;
+    skip
+end

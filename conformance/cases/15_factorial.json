@@ -1,0 +1,13 @@
+{
+  "id": "15_factorial",
+  "source": "begin R := 1; while N > 0 do begin R := R * N; N := N - 1 end end",
+  "state": {
+    "N": 4
+  },
+  "expect": {
+    "state": {
+      "N": 0,
+      "R": 24
+    }
+  }
+}

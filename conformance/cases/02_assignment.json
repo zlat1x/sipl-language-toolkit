@@ -1,0 +1,21 @@
+{
+  "id": "02_assignment",
+  "source": "begin X := 7 end",
+  "state": {},
+  "expect": {
+    "state": {
+      "X": 7
+    },
+    "ast": {
+      "kind": "Program",
+      "body": {
+        "kind": "Assign",
+        "name": "X",
+        "value": {
+          "kind": "Number",
+          "value": 7
+        }
+      }
+    }
+  }
+}
