@@ -123,4 +123,4 @@ assert evaluate(build(program)).state == {"X": 0}
 
 The formal language and semantical rules derive from *Teoriia prohramuvannia. Praktykum* (O. Shyshatska, A. Kryvolap, A. Shyshatsky, 2024) and the course lectures. See [`docs/architecture.md`](docs/architecture.md) for precise rule correspondences and limitations. The 2026 project rubric explicitly caps the score at 10 despite a higher declared module sum.
 
-**AI usage declaration:** OpenAI ChatGPT was used to assist with architecture, implementation, automated tests, and documentation. The resulting code is accompanied by reproducible installation instructions and test cases.
+**AI usage declaration:** ChatGPT (OpenAI) was used during project development and preparation of supporting materials. The software was verified through automated testing.
